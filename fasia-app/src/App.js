@@ -1,18 +1,18 @@
-import logo from './R.png';
+//import logo from './R.png';
 import './App.css';
 
-import Hello from './Hello';
-import Goodbye from './Goodbye';
+import TodoList from './components/TodoLists' ;
+import UserCard from './components/UserCard';
 import JSXExamples from './component/JSXExxamples';
-
 function App() {
   return (
     <div className="App">
-      <Hello/>
-      <Goodbye/>
       <JSXExamples/>
+      <UserCard/>
+      <TodoList/>
+      
 
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -25,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }

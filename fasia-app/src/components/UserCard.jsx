@@ -1,9 +1,10 @@
 import React from 'react';
+//import logo from './R.png';
 
 // Component ย่อยๆ
 const Avatar = () => (
     <img 
-        src="https://via.placeholder.com/50" 
+        src="https://thethaiger.com/th/wp-content/uploads/2022/11/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%B9%E0%B8%99%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%86-%E0%B8%AD%E0%B8%B1%E0%B8%9B%E0%B9%80%E0%B8%94%E0%B8%95-2022-10.jpg" 
         alt="User Avatar"
         style={{
             borderRadius: '50%',
@@ -16,7 +17,7 @@ const Avatar = () => (
 
 const UserName = () => (
     <h3 style={{ color: '#667eea', margin: '10px 0' }}>
-        สมชาย ใจดี
+    Fasia เหมียนเอียด
     </h3>
 );
 
