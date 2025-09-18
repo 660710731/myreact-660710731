@@ -1,99 +1,163 @@
-// ข้อมูลหนังสือสำหรับร้านหนังสือ
-export const booksData = [
+// Mock data for books
+export const books = [
   {
-    id: 1,
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    category: "classic",
-    price: 350,
-    originalPrice: 450,
-    image: "/images/book-covers/to-kill-mockingbird.jpg",
-    description: "นวนิยายคลาสสิกที่กล่าวถึงความยุติธรรมและอคติทางสังคมในอเมริกาใต้",
-    publishYear: 1960,
-    pages: 324,
-    isbn: "978-0-06-112008-4",
-    rating: 4.8,
-    reviewCount: 1250,
-    inStock: true,
-    stockQuantity: 15,
-    publisher: "J.B. Lippincott & Co.",
-    tags: ["classic", "social-justice", "coming-of-age"],
-    featured: true
-  },
-  {
-    id: 2,
-    title: "1984",
-    author: "George Orwell",
-    category: "dystopian",
-    price: 320,
-    originalPrice: 400,
-    image: "/images/book-covers/1984.jpg",
-    description: "นวนิยายดิสโทเปียที่พรรณนาถึงสังคมเผด็จการและการควบคุมความคิด",
-    publishYear: 1949,
-    pages: 328,
-    isbn: "978-0-452-28423-4",
-    rating: 4.7,
-    reviewCount: 2100,
-    inStock: true,
-    stockQuantity: 23,
-    publisher: "Secker & Warburg",
-    tags: ["dystopian", "political", "surveillance"],
-    featured: true
-  },
-  {
-    id: 3,
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    category: "classic",
-    price: 290,
-    originalPrice: 380,
-    image: "/images/book-covers/great-gatsby.jpg",
-    description: "เรื่องราวของความฝันอเมริกันในยุค Jazz Age",
-    publishYear: 1925,
+    id: '1',
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    price: 12.99,
+    oldPrice: 15.99,
+    image: '/images/books/book1.jpg',
+    category: 'fiction',
+    rating: 4.5,
+    reviews: 234,
+    description: 'A classic American novel set in the Jazz Age...',
+    badge: 'Bestseller',
+    isbn: '978-0-7432-7356-5',
     pages: 180,
-    isbn: "978-0-7432-7356-5",
-    rating: 4.4,
-    reviewCount: 1800,
-    inStock: false,
-    stockQuantity: 0,
-    publisher: "Charles Scribner's Sons",
-    tags: ["classic", "american-dream", "jazz-age"],
-    featured: false
-  }
-  // ... เพิ่มหนังสือเล่มอื่นๆ
+    language: 'English',
+    publisher: 'Scribner',
+    publishDate: '1925',
+    inStock: true,
+  },
+  {
+    id: '2',
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    price: 14.99,
+    oldPrice: 18.99,
+    image: '/images/books/book2.jpg',
+    category: 'fiction',
+    rating: 4.8,
+    reviews: 456,
+    description: 'A gripping tale of racial injustice and childhood innocence...',
+    badge: 'Award Winner',
+    isbn: '978-0-06-112008-4',
+    pages: 324,
+    language: 'English',
+    publisher: 'J.B. Lippincott & Co.',
+    publishDate: '1960',
+    inStock: true,
+  },
+  {
+    id: '3',
+    title: 'Clean Code',
+    author: 'Robert C. Martin',
+    price: 39.99,
+    image: '/images/books/book3.jpg',
+    category: 'technology',
+    rating: 4.6,
+    reviews: 189,
+    description: 'A handbook of agile software craftsmanship...',
+    badge: 'New',
+    isbn: '978-0-13-235088-2',
+    pages: 464,
+    language: 'English',
+    publisher: 'Prentice Hall',
+    publishDate: '2008',
+    inStock: true,
+  },
+  // Add more books as needed...
 ];
 
-// ข้อมูลหมวดหมู่หนังสือ
+// Categories data
 export const categories = [
-  { id: 'classic', name: 'วรรณกรรมคลาสสิก', description: 'หนังสือคลาสสิกที่เป็นมรดกทางวรรณกรรม' },
-  { id: 'fantasy', name: 'แฟนตาซี', description: 'นวนิยายแฟนตาซีและเวทมนตร์' },
-  { id: 'dystopian', name: 'ดิสโทเปีย', description: 'นิยายสังคมอนาคตที่มืดมน' },
-  { id: 'mystery', name: 'นิยายสืบสวน', description: 'เรื่องลึกลับและการสืบสวน' },
-  { id: 'romance', name: 'โรแมนติก', description: 'นิยายรักและความสัมพันธ์' }
+  {
+    id: 'fiction',
+    name: 'Fiction',
+    count: 245,
+    icon: '/images/categories/fiction.svg',
+  },
+  {
+    id: 'non-fiction',
+    name: 'Non-Fiction',
+    count: 189,
+    icon: '/images/categories/non-fiction.svg',
+  },
+  {
+    id: 'technology',
+    name: 'Technology',
+    count: 156,
+    icon: '/images/categories/technology.svg',
+  },
+  {
+    id: 'business',
+    name: 'Business',
+    count: 134,
+    icon: '/images/categories/business.svg',
+  },
+  {
+    id: 'self-help',
+    name: 'Self Help',
+    count: 98,
+    icon: '/images/categories/self-help.svg',
+  },
+  {
+    id: 'children',
+    name: 'Children',
+    count: 267,
+    icon: '/images/categories/children.svg',
+  },
 ];
 
-// ฟังก์ชันช่วยในการจัดการข้อมูลหนังสือ
+// Helper functions
+export const getAllBooks = () => {
+  return books;
+};
+
 export const getBookById = (id) => {
-  return booksData.find(book => book.id === parseInt(id));
+  return books.find(book => book.id === id);
 };
 
 export const getBooksByCategory = (categoryId) => {
-  return booksData.filter(book => book.category === categoryId);
+  return books.filter(book => book.category === categoryId);
 };
 
-export const getFeaturedBooks = (count = 3) => {
-  return booksData
-    .filter(book => book.featured && book.inStock)
-    .sort((a, b) => b.rating - a.rating)
-    .slice(0, count);
+export const getFeaturedBooks = () => {
+  return books.filter(book => book.badge === 'Bestseller' || book.badge === 'New').slice(0, 4);
+};
+
+export const getCategories = () => {
+  return categories;
 };
 
 export const searchBooks = (query) => {
-  const searchQuery = query.toLowerCase();
-  return booksData.filter(book => 
-    book.title.toLowerCase().includes(searchQuery) ||
-    book.author.toLowerCase().includes(searchQuery) ||
-    book.description.toLowerCase().includes(searchQuery) ||
-    book.tags.some(tag => tag.toLowerCase().includes(searchQuery))
+  const lowercaseQuery = query.toLowerCase();
+  return books.filter(book => 
+    book.title.toLowerCase().includes(lowercaseQuery) ||
+    book.author.toLowerCase().includes(lowercaseQuery) ||
+    book.description.toLowerCase().includes(lowercaseQuery)
   );
+};
+
+export const getRelatedBooks = (bookId, limit = 4) => {
+  const book = getBookById(bookId);
+  if (!book) return [];
+  
+  return books
+    .filter(b => b.id !== bookId && b.category === book.category)
+    .slice(0, limit);
+};
+
+// Mock reviews data
+export const getBookReviews = (bookId) => {
+  return [
+    {
+      id: '1',
+      bookId,
+      userName: 'John Doe',
+      rating: 5,
+      date: '2024-01-15',
+      comment: 'Excellent book! Highly recommend it.',
+      helpful: 23,
+    },
+    {
+      id: '2',
+      bookId,
+      userName: 'Jane Smith',
+      rating: 4,
+      date: '2024-01-10',
+      comment: 'Great read, well written and engaging.',
+      helpful: 15,
+    },
+  ];
 };
